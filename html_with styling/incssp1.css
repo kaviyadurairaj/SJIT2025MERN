@@ -1,0 +1,10 @@
+h1{
+    margin-top: 10px;
+
+}
+.box-model{
+    background-color: rgb(127, 200, 255);
+    margin: 5px;
+    padding: 10px;
+    border: solid 5px cornflowerblue;
+}

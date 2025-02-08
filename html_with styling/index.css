@@ -9,4 +9,8 @@
 }
 ol{
     margin-top: 100px;
+    list-style-type: circle;
+}
+*{
+    background-color: blueviolet;
 }
