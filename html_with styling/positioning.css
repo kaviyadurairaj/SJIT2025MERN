@@ -36,10 +36,16 @@
     top: 50px;
 }
 .fixed-pos{
-    position:fixed;
-    bottom: 0px;
+    position:absolute;
+    bottom: 10px;
+    left: 50px;
+    z-index: 1000;
 
 
+}
+.fixed {
+    position: fixed; 
+    top: 200px; 
 }
 .sticky-pos{
     position:sticky;

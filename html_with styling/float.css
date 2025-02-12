@@ -7,6 +7,14 @@
     margin-right: 20px; 
 }
 img{
-    border: 5px solid;
-    opacity: 0.5;
+    opacity: 1;
+    display: block;
+}
+.border-dull{
+    float: left;
+    border: 10px solid rgba(10, 10, 103, 0.5);
+}
+.border-dull2{
+    float: right;
+    border: 10px solid rgba(26, 26, 172, 0.5);
 }
