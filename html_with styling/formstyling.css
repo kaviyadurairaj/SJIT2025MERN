@@ -1,0 +1,10 @@
+input{
+    border: 2px solid rgb(232, 179, 109);
+    border-radius:30px;
+
+}
+input[type=number]{
+    border: 2px solid rgb(232, 179, 109);
+    border-radius:30px;
+
+}
