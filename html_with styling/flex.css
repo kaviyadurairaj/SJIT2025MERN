@@ -12,6 +12,11 @@
     justify-content: space-evenly;
     padding: 20px;
  }
+ nav li{
+    list-style-type: none;
+    font-size: large;
+    position: relative;
+ }
 
     .link{
         text-decoration: none;
@@ -20,16 +25,25 @@
         
     }
     .link:hover{
-        background-color: aliceblue;
+        background-color: rgb(226, 230, 234);
         border-radius: 5px;
 
-    }
-    li{
-        font-size: large;
     }
     header img {
         border: 2px solid black; 
         border-radius: 50px;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: rgb(111, 158, 198);
+        padding: 20px;
+        top: 100%;
+        border-color: blue;
+        border-radius: 20px;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
     }
     @media screen and (max-width: 768px) {
         nav {
@@ -47,5 +61,6 @@
             width: 40px; 
             height: 40px;
         }
+
     }
     
