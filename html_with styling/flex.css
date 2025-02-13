@@ -1,0 +1,34 @@
+ body{
+    margin: 0;
+    
+ }
+ header{
+    background-color: rgb(186, 189, 188);
+
+ }
+ nav{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 20px;
+ }
+
+    .link{
+        text-decoration: none;
+        color: black;
+        padding: 3px;
+        
+    }
+    .link:hover{
+        background-color: aliceblue;
+        border-radius: 5px;
+
+    }
+    li{
+        font-size: large;
+    }
+    header img {
+        border: 2px solid black; 
+        border-radius: 50px;
+    }
+    
