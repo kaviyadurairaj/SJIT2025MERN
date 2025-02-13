@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions and Animations</title>
+    <link rel="stylesheet" href="transitionandanimations.css">
+    <style>
+          .transition1{
+            color: rgb(173, 37, 60);
+            background-color: rgb(220, 123, 136);
+            transition:background-color 5s, width 5s,height 5s,padding 5s;
+          }
+          .transition1:hover{
+            color:  rgb(161, 42, 165);
+            background-color: pink;
+            padding: 30px;
+            height: 100px;
+            width:300px;
+            transform: rotate(360deg);
+          }
+          .transition2{
+            color: navy;
+            background-color: rgb(104, 174, 218);
+            transition: width 5s,height 5s,transform 5s;
+          }
+          .transition2:hover{
+            color:  rgb(104, 174, 218);
+            background-color:navy;
+            padding: 30px;
+            height: 100px;
+            width:300px;
+            transform: rotate(360deg);
+          }
+          @keyframes animationDiv{
+            from{
+                background-color: rgb(48, 126, 174);
+                color: brown;
+            }
+            to{
+                background-color:green;
+                color: white;
+            }
+          }
+          @keyframes animationDiv2{
+            0%{
+                background-color: cadetblue;
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                background-color: blueviolet;
+                left: 0px;
+                top: 0px;
+            }
+            75%{
+                background-color: navy;
+                left: 0px;
+                top: 0px;
+            }
+            100%{
+                background-color: cadetblue;
+                left: 0px;
+                top: 0px;
+            }
+
+          }
+          .animation{
+            animation-name: animationDiv;
+            position: relative;
+            background-color: burlywood;
+            color: brown;
+            width: 200px;
+            height: 20px;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+          }
+          .animation2{
+            animation-name: animationDiv2;
+            background-color: rgba(232, 18, 18, 0.799);
+            color: pink;
+            width: 200px;
+            height: 20px;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            position: sticky;
+          }
+    </style>
+</head>
+<body>
+    <h1 class="transition1">This is a Transition Example1</h1>
+    <h1 class="transition2">This is a Transition Example2</h1>
+    <h1>This is Animation </h1>
+    <div class="animation">Animation 1</div><br>
+    <div class="animation2">Animation 2</div>
+</body>
+</html>
