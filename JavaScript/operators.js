@@ -1,0 +1,11 @@
+/*console.log(5&&10)
+ console.log(true && 10)
+ console.log(false && 10)
+ console.log(false || 10)
+ console.log(true || 10)
+ console.log(5||10)
+ console.log(false && true)
+ console.log(true && false)
+ console.log(false || true)
+ console.log(true || false)*/
+ console.log(55<<3)
