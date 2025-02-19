@@ -1,24 +1,30 @@
 import Home from './components/functionalComponents/Home.jsx';
-import ClasscompEG from './components/ClassComponents/classcompEG.jsx';
 import About from './components/functionalComponents/About.jsx';
 import Contact from './components/functionalComponents/Contact.jsx';
 import Gallery from './components/functionalComponents/Gallery.jsx';
 import Login from './components/functionalComponents/login.jsx';
 import SignUp from './components/functionalComponents/SignUp.jsx';
 import Navbar from './components/functionalComponents/Navbar.jsx';
+import UseEffect from './components/functionalComponents/Hooks/useEffect.jsx';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+
 
 function App() {
   return (
     <main>
-      <Navbar/><br/>
-      <ClasscompEG /><br/>
-      <hr/>
-      <Home properties="hello" sjit="everyone" /><hr/>
-      <About/><hr/>
-      <Contact/><hr/>
-      <Gallery/><hr/>
-      <Login/><hr/>
-      <SignUp/>
+      <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home properties="hello" sjit="everyone" />}></Route>
+        <Route path='/About' element={<About/>}></Route>
+        <Route path='/Contact' element={<Contact/>}></Route>
+        <Route path='/Gallery' element={<Gallery/>}></Route>
+        <Route path='/Login' element={<Login/>}></Route>
+        <Route path='/Signup' element={<SignUp/>}></Route>
+        <Route path='/use-state' element={<useState/>}/>
+        <Route path='/use-effect' element={<UseEffect/>} />
+      </Routes>
+      </BrowserRouter>
     </main>
   );
 }

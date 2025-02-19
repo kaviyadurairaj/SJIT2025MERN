@@ -1,8 +1,8 @@
 function Home(properties){
     var styling={
         textAlign:"center",
-        backgroundColor:"blue",
-        color:"White"
+        backgroundColor:"pink",
+        color:"black"
     }
     var a=10
     return(
