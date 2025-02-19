@@ -47,3 +47,12 @@ class Classeg{
 }
 obj=new Classeg()
 console.log(obj.classfun());
+const [first, second, ...rest] = [1, 2, 3, 4, 5];
+console.log(first);  
+console.log(second);
+console.log(rest);  
+// Destructuring an object
+const person = { name: "Alice", age: 30, city: "Paris" };
+const { name, ...otherDetails } = person;
+console.log(name);        
+console.log(otherDetails);  
