@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+header {
+    background-color: #333; /* Dark background */
+    padding: 10px ;
+  }
+  
+  /* Navbar styling */
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* List items should be displayed inline */
+  nav li {
+    list-style: none;
+    margin: 0 40px;
+  }
+  
+  /* Navbar links */
+  nav li a {
+    color: white; 
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+  
+  /* Hover effect */
+  nav li a:hover {
+    color: rgb(91, 187, 202);
+  }
+  
+
+  
+  
+  
