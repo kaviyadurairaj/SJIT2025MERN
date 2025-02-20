@@ -6,8 +6,11 @@ import Login from './components/functionalComponents/login.jsx';
 import SignUp from './components/functionalComponents/SignUp.jsx';
 import Navbar from './components/functionalComponents/Navbar.jsx';
 import UseEffect from './components/functionalComponents/Hooks/useEffect.jsx';
+import UseState from './components/functionalComponents/Hooks/UseState.jsx';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import UseEffectAPI from './components/functionalComponents/Hooks/UseEffectAPI.jsx';
+import UseRef from './components/functionalComponents/Hooks/UseRef.jsx';
+import UseMemo from './components/functionalComponents/Hooks/UseMemo.jsx'
 
 
 function App() {
@@ -22,9 +25,11 @@ function App() {
         <Route path='/Gallery' element={<Gallery/>}></Route>
         <Route path='/Login' element={<Login/>}></Route>
         <Route path='/SignUp' element={<SignUp/>}></Route>
-        <Route path='/use-state' element={<useState/>}/>
+        <Route path='/use-state' element={<UseState/>}/>
         <Route path='/use-effect' element={<UseEffect/>} />
         <Route path='/use-effect-api'  element={<UseEffectAPI/>}/>
+        <Route path='/use-ref' element={<UseRef/>}/>
+        <Route path='/use-memo' element={<UseMemo/>}/>
       </Routes>
       </BrowserRouter>
     </main>
@@ -35,18 +40,5 @@ export default App;
 
 
 
-/*function App() {
-  return (
-    <div>
-      <h1>Welcome All</h1><br/>
-      <hr className="custom-line" />
-      <p>The topic is about REACT</p><hr/>
-
-    </div>
-  );
-}
-
-export default App;
-*/
 
 

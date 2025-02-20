@@ -41,10 +41,8 @@ nav li a:hover {
   background-color: #444;
   padding: 5px;
   border-radius: 10px;
-  list-style: none;
   text-align: center;
   width: 150px;
-  
 }
 
 .hooks-container ol li {
@@ -61,6 +59,9 @@ nav li a:hover {
   color: rgb(31, 68, 74);
   background-color: aquamarine;
   border-radius: 8px;
+}
+.api-list{
+  list-style: decimal;
 }
 
   
