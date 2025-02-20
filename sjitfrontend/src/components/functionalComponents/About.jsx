@@ -6,12 +6,15 @@
         color:"black"
     }
     var a=10;
-    const [count,setcount]=useState(0);
+    const [count,setcount]=useState(a);
     function increment(){
         setcount(count+1);
     }
     function decrement(){
         setcount(count-1);
+    }
+    function reset(){
+        setcount(a)
     }
     return (
         <div>
@@ -20,6 +23,7 @@
             <h3>Initial Value:{count}</h3>
             <button onClick={increment}> +</button>
             <button onClick={decrement}>-</button>
+            <button onClick={reset}>Reset</button>
             <br/>
         </div>
     )

@@ -7,9 +7,9 @@ function Home(properties){
     var a=10
     return(
         <div>
-            <h1 style={styling}>Home page</h1>
+            <h1 style={styling}>Home page</h1><br/>
             <h3>Below tag is for props</h3>
-            <h3>Props:{properties.properties},{properties.sjit}</h3>
+            <h3>Props:{properties.properties},{properties.sjit}</h3><br/><hr/>
         </div>
     );
 }

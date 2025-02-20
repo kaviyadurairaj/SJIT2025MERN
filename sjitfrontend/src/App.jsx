@@ -7,6 +7,7 @@ import SignUp from './components/functionalComponents/SignUp.jsx';
 import Navbar from './components/functionalComponents/Navbar.jsx';
 import UseEffect from './components/functionalComponents/Hooks/useEffect.jsx';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import UseEffectAPI from './components/functionalComponents/Hooks/UseEffectAPI.jsx';
 
 
 function App() {
@@ -20,9 +21,10 @@ function App() {
         <Route path='/Contact' element={<Contact/>}></Route>
         <Route path='/Gallery' element={<Gallery/>}></Route>
         <Route path='/Login' element={<Login/>}></Route>
-        <Route path='/Signup' element={<SignUp/>}></Route>
+        <Route path='/SignUp' element={<SignUp/>}></Route>
         <Route path='/use-state' element={<useState/>}/>
         <Route path='/use-effect' element={<UseEffect/>} />
+        <Route path='/use-effect-api'  element={<UseEffectAPI/>}/>
       </Routes>
       </BrowserRouter>
     </main>

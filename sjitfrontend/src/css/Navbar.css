@@ -1,38 +1,68 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 header {
-    background-color: #333; /* Dark background */
-    padding: 10px ;
-  }
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 20px;
+  position: relative;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+}
+
+/* Hover effect */
+nav li a:hover {
+  color: rgb(91, 187, 202);
+}
+
+/* Hooks Dropdown */
+.hooks-container ol {
+  position: absolute;
+  top: 100%; /* Positioned below Hooks */
+  left: 0;
+  background-color: #444;
+  padding: 5px;
+  border-radius: 10px;
+  list-style: none;
+  text-align: center;
+  width: 150px;
   
-  /* Navbar styling */
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* List items should be displayed inline */
-  nav li {
-    list-style: none;
-    margin: 0 40px;
-  }
-  
-  /* Navbar links */
-  nav li a {
-    color: white; 
-    text-decoration: none;
-    font-size: 18px;
-    padding: 8px 12px;
-  }
-  
-  /* Hover effect */
-  nav li a:hover {
-    color: rgb(91, 187, 202);
-  }
-  
+}
+
+.hooks-container ol li {
+  padding: 10px;
+}
+
+.hooks-container ol li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.hooks-container ol li a:hover {
+  color: rgb(31, 68, 74);
+  background-color: aquamarine;
+  border-radius: 8px;
+}
 
   
-  
+
   
