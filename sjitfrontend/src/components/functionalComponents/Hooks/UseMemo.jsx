@@ -1,16 +1,19 @@
 import { useState, useMemo } from "react";
-
+const slowFunction = (num) => {
+    console.log("Running slow function...");
+    for (let i = 0; i < 1000000000; i++) {  } 
+    return num*2
+    
+};
 const UseMemoExample = () => {
-    const [number, setNumber] = useState("");
+    const [number, setNumber] = useState(0);
     const [theme, setTheme] = useState(false);
 
-    const db = useMemo(() => {
-        return number * 2;
-    }, [number]);
+    const db = useMemo(() => slowFunction(number), [number]);
 
     const styling = {
-        backgroundColor: theme ? "black" : "white",
-        color: theme ? "white" : "black",
+        backgroundColor: theme ? "pink" : "white",
+        color: theme ? "black" : "black",
 
     };
 
