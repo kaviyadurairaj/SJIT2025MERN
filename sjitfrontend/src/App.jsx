@@ -14,6 +14,9 @@ import UseMemo from './components/functionalComponents/Hooks/UseMemo.jsx'
 import UseCallback from './components/functionalComponents/Hooks/UseCallback.jsx'
 import UseMemoize from './components/functionalComponents/Hooks/UseMemoize.jsx';
 import HoC from './components/functionalComponents/HoC/HoC.jsx';
+import Memo from './components/functionalComponents/Memoization/Memo.jsx';
+import LazyLoad from './components/functionalComponents/Memoization/LazyLoadingAndSuspense.jsx';
+import NumberFile from './components/functionalComponents/Memoization/NumberFile.jsx';
 
 
 function App() {
@@ -36,6 +39,10 @@ function App() {
         <Route path='/use-callback' element={<UseCallback/>}/>
         <Route path='/use-memoize' element={<UseMemoize/>}/>
         <Route path='/hoc' element={<HoC/>}/>
+        <Route path='/memo' element={<Memo/>}/>
+        <Route path='/lazyload' element={<LazyLoad/>}/>
+        <Route path='/num' element={<NumberFile/>}/>
+    
       </Routes>
       </BrowserRouter>
     </main>

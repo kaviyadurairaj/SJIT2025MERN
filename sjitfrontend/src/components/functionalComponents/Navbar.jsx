@@ -5,6 +5,8 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [dropdownVisible1, setDropdownVisible1] = useState(false);
+
 
   return (
     <header>
@@ -34,6 +36,22 @@ const Navbar = () => {
                 <li><Link to='/use-memo'>UseMemo</Link></li>
                 <li><Link to='/use-callback'>UseCallback</Link></li>
                 <li><Link to='/use-memoize'>UseMemoize</Link></li>
+              </ol>
+            )}
+          </li>
+          <li className="Memo-container">
+            <span 
+              style={{ color: "white", cursor: "pointer" }} 
+              onClick={() => setDropdownVisible1(!dropdownVisible1)}//event handling
+            >
+              Memoization 
+            </span>
+
+            {dropdownVisible1 && (
+              <ol>
+                <li><Link to='memo'>Memo</Link></li>
+                <li><Link to='lazyload'>LazyLoading</Link></li>
+                <li><Link to='num'>NumFile</Link></li>
               </ol>
             )}
           </li>
