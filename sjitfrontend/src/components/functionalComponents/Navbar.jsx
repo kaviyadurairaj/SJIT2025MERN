@@ -16,6 +16,7 @@ const Navbar = () => {
           <li><Link to='/Login'>Login</Link></li>
           <li><Link to='/SignUp'>SignUp</Link></li>
           <li><Link to='/Gallery'>Gallery</Link></li>
+          <li><Link to='/HoC'>HoC</Link></li>
           <li className="hooks-container">
             <span 
               style={{ color: "white", cursor: "pointer" }} 
@@ -31,6 +32,8 @@ const Navbar = () => {
                 <li><Link to='/use-effect-api'>useEffectAPI</Link></li>
                 <li><Link to='/use-ref'>UseRef</Link></li>
                 <li><Link to='/use-memo'>UseMemo</Link></li>
+                <li><Link to='/use-callback'>UseCallback</Link></li>
+                <li><Link to='/use-memoize'>UseMemoize</Link></li>
               </ol>
             )}
           </li>
