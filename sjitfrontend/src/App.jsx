@@ -17,6 +17,11 @@ import HoC from './components/functionalComponents/HoC/HoC.jsx';
 import Memo from './components/functionalComponents/Memoization/Memo.jsx';
 import LazyLoad from './components/functionalComponents/Memoization/LazyLoadingAndSuspense.jsx';
 import NumberFile from './components/functionalComponents/Memoization/NumberFile.jsx';
+import StudentResults from './components/functionalComponents/ContextAPI/StudentResults.jsx';
+import Faculty from './components/functionalComponents/ContextAPI/Faculty.jsx';
+import Exam from './components/functionalComponents/ContextAPI/Exam.jsx';
+import CoE from './components/functionalComponents/ContextAPI/CoE.jsx';
+import Student from './components/functionalComponents/ContextAPI/Student.jsx';
 
 
 function App() {
@@ -42,6 +47,11 @@ function App() {
         <Route path='/memo' element={<Memo/>}/>
         <Route path='/lazyload' element={<LazyLoad/>}/>
         <Route path='/num' element={<NumberFile/>}/>
+        <Route path='/student' element={<StudentResults/>}/>
+        <Route path='/faculty' element={<Faculty/>}/>
+        <Route path='/exam' element={<Exam/>}/>
+        <Route path='/coe' element={<CoE/>}/>
+        <Route path='/stud' element={<Student/>}/>
     
       </Routes>
       </BrowserRouter>

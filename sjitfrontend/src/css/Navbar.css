@@ -92,4 +92,32 @@ nav li a:hover {
 }
   
 
+.Context-container ol {
+  position: absolute;
+  top: 100%; /* Positioned below Hooks */
+  left: 0;
+  background-color: #444;
+  padding: 5px;
+  border-radius: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+.Context-container ol li {
+  padding: 10px;
+}
+
+.Context-container ol li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.Context-container ol li a:hover {
+  color: rgb(31, 68, 74);
+  background-color: aquamarine;
+  border-radius: 8px;
+}
+  
+
   

@@ -6,6 +6,7 @@ import { useState } from "react";
 const Navbar = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [dropdownVisible1, setDropdownVisible1] = useState(false);
+  const [dropdownVisible2, setDropdownVisible2] = useState(false);
 
 
   return (
@@ -55,6 +56,25 @@ const Navbar = () => {
               </ol>
             )}
           </li>
+          <li className="Context-container">
+            <span 
+              style={{ color: "white", cursor: "pointer" }} 
+              onClick={() => setDropdownVisible2(!dropdownVisible2)}
+            >
+              PropsDrilling
+            </span>
+
+            {dropdownVisible2 && (
+              <ol>
+                <li><Link to='coe'>CoE</Link></li>
+                <li><Link to='exam'>Exam</Link></li>
+                <li><Link to='faculty'>Faculty</Link></li>
+                <li><Link to="student">StudentResults</Link></li>
+                <li><Link to="stud">Student</Link></li>
+              </ol>
+            )}
+          </li>
+
         </ul>
       </nav>
     </header>
