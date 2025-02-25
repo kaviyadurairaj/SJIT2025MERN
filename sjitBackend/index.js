@@ -28,11 +28,11 @@ app.post("/signup",(req,res)=>{
     });
     newSignup.save()
     console.log("Signup Successfully")
-    res.status(201).json({message:"Signup Successully",isSignup:true})
+    res.status(201).json({message:"Signup Successully..",isSignup:true})
 
     }
     catch(error){
-        res.status(201).json({message:"Signup unSuccessully",isSignup:false})
+        res.status(201).json({message:"Signup unSuccessully..",isSignup:false})
 
     }
 });
