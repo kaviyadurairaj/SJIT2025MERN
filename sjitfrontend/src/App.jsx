@@ -47,11 +47,12 @@ function App() {
         <Route path='/memo' element={<Memo/>}/>
         <Route path='/lazyload' element={<LazyLoad/>}/>
         <Route path='/num' element={<NumberFile/>}/>
-        <Route path='/student' element={<StudentResults/>}/>
-        <Route path='/faculty' element={<Faculty/>}/>
-        <Route path='/exam' element={<Exam/>}/>
-        <Route path='/coe' element={<CoE/>}/>
-        <Route path='/stud' element={<Student/>}/>
+        <Route path='/props-drilling/coe' element={<CoE/>}/>
+        <Route path='/props-drilling/exam' element={<Exam/>}/>
+        <Route path='/props-drilling/faculty' element={<Faculty/>}/>
+        <Route path='/props-drilling/student' element={<StudentResults/>}/>
+        <Route path='/props-drilling/stud' element={<Student/>}/>
+
     
       </Routes>
       </BrowserRouter>

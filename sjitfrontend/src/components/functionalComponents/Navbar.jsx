@@ -66,11 +66,12 @@ const Navbar = () => {
 
             {dropdownVisible2 && (
               <ol>
-                <li><Link to='coe'>CoE</Link></li>
-                <li><Link to='exam'>Exam</Link></li>
-                <li><Link to='faculty'>Faculty</Link></li>
-                <li><Link to="student">StudentResults</Link></li>
-                <li><Link to="stud">Student</Link></li>
+                <li><Link to='/props-drilling/coe'>CoE</Link></li>
+                <li><Link to='/props-drilling/exam'>Exam</Link></li>
+                <li><Link to='/props-drilling/faculty'>Faculty</Link></li>
+                <li><Link to='/props-drilling/student'>StudentResults</Link></li>
+                <li><Link to='/props-drilling/stud'>Student</Link></li>
+
               </ol>
             )}
           </li>

@@ -1,10 +1,12 @@
 import Faculty from "./Faculty";
-const Student = () =>{
-    return(
+
+const Student = ({ sgpa, cgpa }) => {
+    return (
         <div>
             <h1>Students are writing exams.</h1>
-            <Faculty></Faculty>
+            <Faculty sgpa={sgpa} cgpa={cgpa} />
         </div>
-    )
-}
+    );
+};
+
 export default Student;
