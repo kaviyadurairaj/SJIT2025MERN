@@ -1,13 +1,16 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-const bcrypt = require("bcrypt"); 
+const bcrypt = require("bcrypt");
+const cors = require("cors"); 
+
 dotenv.config();
 
 const Signup = require("./models/signupSchema");
 
 const app = express();
 app.use(express.json());
+app.use(cors()); 
 
 const PORT = 3001;
 
@@ -31,7 +34,7 @@ app.post("/signup", async (req, res) => {
       firstName,
       lastName,
       email,
-      password: hashedPassword, 
+      password: hashedPassword,
       phoneNumber,
     });
 
@@ -73,10 +76,9 @@ app.post("/login", async (req, res) => {
   }
 });
 
-  
-  app.listen(PORT, () =>
-    console.log(`Server started successfully on port ${PORT}`)
-  );
-  
+
+app.listen(PORT, () =>
+  console.log(`Server started successfully on port ${PORT}`)
+);
 
 
