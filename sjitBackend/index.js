@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-const bcrypt = require("bcrypt"); // Import bcrypt
+const bcrypt = require("bcrypt"); 
 dotenv.config();
 
 const Signup = require("./models/signupSchema");
@@ -24,8 +24,6 @@ app.post("/signup", async (req, res) => {
   try {
     console.log("Received Data:", req.body);
     const { firstName, lastName, email, password, phoneNumber } = req.body;
-
-    // **Hash the password before saving**
     const saltRounds = 10;
     const hashedPassword = await bcrypt.hash(password, saltRounds);
 
@@ -33,7 +31,7 @@ app.post("/signup", async (req, res) => {
       firstName,
       lastName,
       email,
-      password: hashedPassword, // Store the hashed password
+      password: hashedPassword, 
       phoneNumber,
     });
 
@@ -47,6 +45,38 @@ app.post("/signup", async (req, res) => {
   }
 });
 
-app.listen(PORT, () =>
-  console.log(`Server started successfully on port ${PORT}`)
-);
+app.post("/login", async (req, res) => {
+  try {
+    console.log("Login Request Data:", req.body);
+    const { email, password } = req.body;
+
+    const user = await Signup.findOne({ email });
+    console.log("User Found:", user);
+
+    if (!user) {
+      return res.status(400).json({ message: "User not found", isLogin: false });
+    }
+
+    const isMatch = await bcrypt.compare(password, user.password);
+    console.log("Password Match:", isMatch);
+
+    if (!isMatch) {
+      return res.status(400).json({ message: "Invalid password", isLogin: false });
+    }
+
+    console.log("Login Successful");
+    res.status(200).json({ message: "Login Successful", isLogin: true });
+
+  } catch (error) {
+    console.error("Error in login:", error);
+    res.status(500).json({ message: "Login Unsuccessful", isLogin: false });
+  }
+});
+
+  
+  app.listen(PORT, () =>
+    console.log(`Server started successfully on port ${PORT}`)
+  );
+  
+
+
